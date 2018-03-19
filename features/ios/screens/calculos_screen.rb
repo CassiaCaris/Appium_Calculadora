@@ -1,18 +1,18 @@
 #  frozen_string_literal: true
 class Calculos_screen
     def initialize
-     @inicial = 'XCUIElementTypeApplication'
+     @inicial = 'SimpleCalculator'
      @num1 = 'apple_first_input'
      @num2 = 'apple_second_input'
      @btn_sum = 'apple-sum-button'
      @btn_sub = 'apple-subtract-button'
      @btn_mult = 'apple-multiply-button'
      @btn_div = 'apple-divide-button'
-     @resultado = 'XCUIElementTypeStaticText'
+     @resultado = 'apple_result_text'
     end
  
      def tela_principal
-         find_element(class: @inicial).text
+         find_element(id: @inicial).text.displayed?
     end
  
     def insercao
@@ -39,7 +39,7 @@ class Calculos_screen
     end
 
     def validação
-        find_element(class: @resultado).text
+        find_element(id: @resultado).text
     end
    
  end
