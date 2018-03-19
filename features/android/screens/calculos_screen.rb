@@ -15,6 +15,7 @@ class Calculos_screen
     def tela_principal
         #binding.pry
         find_elements(class: @inicial).text("Simple Calculator Android")
+
    end
 
     def insercao
