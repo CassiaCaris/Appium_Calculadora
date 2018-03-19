@@ -13,9 +13,7 @@ class Calculos_screen
    end
 
     def tela_principal
-        #binding.pry
-        find_elements(class: @inicial).text("Simple Calculator Android")
-
+        find_elements(class: @inicial).text("Simple Calculator Android").displayed? 
    end
 
     def insercao
