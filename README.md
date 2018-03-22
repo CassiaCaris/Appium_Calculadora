@@ -1,3 +1,6 @@
+
+[![Dependency Status](https://beta.gemnasium.com/badges/github.com/CassiaCaris/Appium_Calculadora.svg)](https://beta.gemnasium.com/projects/github.com/CassiaCaris/Appium_Calculadora)
+
 Automação da Calculadora desenvolvida pelo Leonardo Menezes.
 
 Com base na continuação dos estudos, focando no Appium + Cucumber
