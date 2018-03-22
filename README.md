@@ -6,4 +6,4 @@ Com base na continuação dos estudos, focando no Appium + Cucumber
 
   - realização de teste para as operações (soma, subtração, Multiplicação e Divisão), com valores informados na automação.
   - Nessa branch foi realizada a alteração da features para realizar a execução em esquema de cenário.
-    - Para cada operação matemática foi informado valores diferentes.
+    - Para cada operação matemática com valores diferentes.
