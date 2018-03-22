@@ -36,7 +36,5 @@ class Calculos_screen
     def validacao (string4)
         @result = find_element(id: @resultado).text
         string4 == @result
-        #find_element(text: "#{string4}").displayed?
-        #find_element(:xpath, "//*[@text='#{string4}']").displayed?
     end
 end
