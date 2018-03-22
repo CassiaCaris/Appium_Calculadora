@@ -16,30 +16,27 @@ class Calculos_screen
         find_elements(class: @inicial).text("Simple Calculator Android").displayed? 
    end
 
-    def insercao
-        n1 = "10"
-        n2 = "5"
-        find_element(id: @num1).send_keys(n1)
-        find_element(id: @num2).send_keys(n2)
+    def insercao (string, string2)
+        find_element(id: @num1).send_keys(string)
+        find_element(id: @num2).send_keys(string2)
     end
 
-    def botao_soma
-        find_element(id: @btn_sum).click
+    def calcular (string3)
+        if string3 == "SUM" then
+            find_element(id: @btn_sum).click
+        elsif string3 == "SUBTRACT" then
+            find_element(id: @btn_sub).click
+        elsif string3 == "MULTIPLY" then
+            find_element(id: @btn_mult).click
+        else 
+            find_element(id: @btn_div).click
+        end
     end
 
-    def botao_sub
-        find_element(id: @btn_sub).click
-    end
-
-    def botao_mult
-        find_element(id: @btn_mult).click
-    end
-
-    def botao_div
-        find_element(id: @btn_div).click
-    end
-
-    def validação
-        find_element(id: @resultado).text
+    def validacao (string4)
+        @result = find_element(id: @resultado).text
+        string4 == @result
+        #find_element(text: "#{string4}").displayed?
+        #find_element(:xpath, "//*[@text='#{string4}']").displayed?
     end
 end

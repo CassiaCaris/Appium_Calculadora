@@ -1,33 +1,18 @@
 # frozen_string_literal: true
 
-Dado("que estou na calculadora") do
+Dado("que estou na Calculadora") do
   @calculo = Calculos_screen.new
   @calculo.tela_principal
 end
 
-Dado("que informei os valores") do
-  @calculo.insercao
+Dado("informar os valores {string} e {string}") do |string, string2|
+  @calculo.insercao(string, string2)
 end
 
-Quando("informar a operação soma") do
-  @calculo.botao_soma
+Quando("informar qual a {string}") do |string3|
+  @calculo.calcular(string3)
 end
 
-Então("vejo o resultado do cálculo") do
-  @calculo.validação
-end
-
-
-Quando("informar a operação subtração") do
-  @calculo.botao_sub
-end
-
-
-Quando("informar a operação multiplicação") do
-  @calculo.botao_mult
-end
-
-
-Quando("informar a operação divisão") do
-  @calculo.botao_div
+Então("devo receber {string} do cálculo") do |string4|
+  fail'O valor do cálculo não confere' unless @calculo.validacao(string4)
 end

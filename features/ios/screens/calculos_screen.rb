@@ -4,42 +4,24 @@ class Calculos_screen
      @inicial = 'SimpleCalculator'
      @num1 = 'apple_first_input'
      @num2 = 'apple_second_input'
-     @btn_sum = 'apple-sum-button'
-     @btn_sub = 'apple-subtract-button'
-     @btn_mult = 'apple-multiply-button'
-     @btn_div = 'apple-divide-button'
-     @resultado = 'apple_result_text'
+     @result = 'apple_result_text'
     end
  
      def tela_principal
-         find_element(id: @inicial).text.displayed?
+         find_element(id: @num1).text
     end
  
-    def insercao
-        n1 = "10"
-        n2 = "5"
-        find_element(id: @num1).send_keys(n1)
-        find_element(id: @num2).send_keys(n2)
+    def insercao(string, string2)
+        find_element(id: @num1).send_keys(string)
+        find_element(id: @num2).send_keys(string2)
     end
 
-    def botao_soma
-        find_element(id: @btn_sum).click
+    def calcular (string3)
+        find_element(name: "#{string3}").click
     end
 
-    def botao_sub
-        find_element(id: @btn_sub).click
-    end
-
-    def botao_mult
-        find_element(id: @btn_mult).click
-    end
-
-    def botao_div
-        find_element(id: @btn_div).click
-    end
-
-    def validação
-        find_element(id: @resultado).text
+    def validacao (string4)
+        find_element(name: "#{string4}").displayed?
     end
    
  end
