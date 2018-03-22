@@ -1,7 +1,7 @@
 #  frozen_string_literal: true
 class Calculos_screen
     def initialize
-     @inicial = 'SimpleCalculator'
+     @inicial = 'XCUIElementTypeApplication'
      @num1 = 'apple_first_input'
      @num2 = 'apple_second_input'
      @btn_sum = 'apple-sum-button'
@@ -12,7 +12,7 @@ class Calculos_screen
     end
  
      def tela_principal
-         find_element(id: @inicial).text.displayed?
+        find_element(class: @inicial).label
     end
  
     def insercao
