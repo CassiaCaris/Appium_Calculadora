@@ -1,9 +1,22 @@
-Automação da Calculadora desenvolvida pelo Leonardo Menezes.
+Automação da Calculadora Simples utilizando Appium+Cucumber
 
+Realização da automação da calculadora, realizando as operações matemáticas básicas.
+Foi realizada a automação com esquema de cenários, onde para cada teste foi informado um valore.
 Com base na continuação dos estudos, focando no Appium + Cucumber
 
-- Foi realizado a automação para Mobile (Android & IOS).
+Para executar o teste:
+	1. Clonar o projeto que deseja testar.
+	2. Deve ser alterado o caminho da pasta onde estão salvos os aplicativos de (Android & IOS) e verificar se os emuladores estão iguais aos informados no projeto. 
+		Verificar as informações nos arquivos (android_appium.txt & ios_appium.txt)
+	4. Primeiramente deve ser iniciado o server do Appium (num terminal ou MS-DOS novo)
+		appium
+	5. Deve ser realizando a instalação das gens
+		Bundle Install
+	6. Para executar a automação do teste de android
+		cucumber -p android
+	7. Para executar a automação do teste de IOS
+		cucumber -p ios
+	8. Caso deseje a execução das duas automações (android & iOS)
+		cucumber -p android & cucumber -p iOS
 
-  - realização de teste para as operações (soma, subtração, Multiplicação e Divisão), com valores informados na automação.
-  - Nessa branch foi realizada a alteração da features para realizar a execução em esquema de cenário.
-    - Para cada operação matemática com valores diferentes.
+Os aplicativos foram desenvolvidos pelo Leonardo Menezes.
