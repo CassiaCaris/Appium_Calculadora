@@ -11,20 +11,17 @@ Funcionalidade: Operações Matemáticas
     Então vejo o resultado do cálculo
 
   Cenário: Realizar um cálculo de subtração
-    Dado que estou na calculadora
-    E que informei os valores 
+    Dado que os valores estejam preenchidos
     Quando informar a operação subtração
     Então vejo o resultado do cálculo
 
   Cenário: Realizar um cálculo de multiplicação
-    Dado que estou na calculadora
-    E que informei os valores 
+    Dado que os valores estejam preenchidos
     Quando informar a operação multiplicação
     Então vejo o resultado do cálculo
 
   Cenário: Realizar um cálculo de divisão
-    Dado que estou na calculadora
-    E que informei os valores 
+    Dado que os valores estejam preenchidos
     Quando informar a operação divisão
     Então vejo o resultado do cálculo
     

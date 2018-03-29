@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 require 'rubygems'
-require 'cucumber'
-require 'cucumber/rake/task'
+#require 'cucumber/rake/task'
 
 desc 'Start server Appium'
 task :appium_server do

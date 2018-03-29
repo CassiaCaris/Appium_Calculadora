@@ -2,7 +2,7 @@
 
 Dado("que estou na calculadora") do
   @calculo = Calculos_screen.new
-  fail'Não se encontra na tela principal'unless @calculo.tela_principal
+  fail'Tela principal não encontrada' unless @calculo.tela_principal
 end
 
 Dado("que informei os valores") do
@@ -14,9 +14,8 @@ Quando("informar a operação soma") do
 end
 
 Então("vejo o resultado do cálculo") do
-  fail'O resultado não corresponde' unless @calculo.validação
+  fail'Resultado inválido' unless @calculo.validação
 end
-
 
 Quando("informar a operação subtração") do
   @calculo.botao_sub
@@ -31,3 +30,4 @@ end
 Quando("informar a operação divisão") do
   @calculo.botao_div
 end
+
