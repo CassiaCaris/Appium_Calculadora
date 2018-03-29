@@ -17,7 +17,6 @@ Então("vejo o resultado do cálculo") do
   fail'Resultado inválido' unless @calculo.validação
 end
 
-
 Quando("informar a operação subtração") do
   @calculo.botao_sub
 end
@@ -31,3 +30,4 @@ end
 Quando("informar a operação divisão") do
   @calculo.botao_div
 end
+
