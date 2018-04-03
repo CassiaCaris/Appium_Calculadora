@@ -6,6 +6,7 @@ Realização da automação da calculadora, realizando as operações matemátic
 Foi realizada a automação com 4 cenários um para cada operação matemática, onde os valores para o teste foi utilizado o mesmo..
 
 Para executar o teste:
+
 	1. Clonar o projeto que deseja testar.
 	
     2. Deve ser alterado o caminho da pasta onde estão salvos os aplicativos de (Android & IOS) e verificar se os emuladores estão iguais aos informados no projeto. 

@@ -16,8 +16,8 @@ class Calculos_screen
     end
  
     def insercao
-        n1 = "10"
-        n2 = "5"
+        n1 = CREDENTIALS['Numero1']
+        n2 = CREDENTIALS['Numero2']
         find_element(id: @num1).send_keys(n1)
         find_element(id: @num2).send_keys(n2)
     end
