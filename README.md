@@ -7,19 +7,21 @@ Foi realizada a automação com 4 cenários um para cada operação matemática,
 
 ## Para executar o teste:
 
-	1. Clonar o projeto que deseja testar.
-	
-    2. Deve ser alterado o caminho da pasta onde estão salvos os aplicativos de (Android & IOS) e verificar se os emuladores estão iguais aos informados no projeto, caso não estejam realizar a alteração nos arquivos (android_appium.txt & ios_appium.txt).
-	
-    3. Primeiramente deve ser iniciado o server do Appium (num terminal ou MS-DOS novo)
-			``` 
-      $ appium
-      ```
-	
-    4. Deve ser realizando a instalação das gens
-		```
-		$ Bundle Install
-		```
+1. Clonar o projeto para testar.
+
+2. Nos arquivos de cabapabilities (android_appium.txt e ios_appium.txt) deve confirmar se estão com as informações corretas os campos dos devices (emuladores) conforme o da máquina e confirma e corrigir o caminhos dos aplicativos, pois ambos estão configurados conforme a minha maquina.
+
+3. Após clonar e confirma as informações dos capabilites, deve ser instaladas as dependencias do projeto:
+```
+$ bundle install
+```
+
+4. Deve ser iniciado o server do Appium (num novo terminal ou MS-DOS)
+```
+$ appium
+```
+
+
 	
     5. Para executar a automação do teste de android
 		````
