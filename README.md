@@ -21,22 +21,20 @@ $ bundle install
 $ appium
 ```
 
+5. Para executar a automação do teste somente de Android
+```
+$ cucumber -p android
+```
 
-	
-    5. Para executar a automação do teste de android
-		````
-		$ cucumber -p android
-		```
-	
-    6. Para executar a automação do teste de IOS
-		```
-		$ cucumber -p ios
-		```
-	
-    7. Caso deseje a execução das duas automações (android & iOS)
-		````
-		$ cucumber -p android & cucumber -p iOS
-		````
+6. Para executar a automação do teste somente de IOS
+```
+$ cucumber -p ios
+```
+
+7. Para executar as duas automações juntas (Android & IOS)
+```
+$ cucumber -p android & cucumber -p ios
+```
 
 >>>>>>> master
 
