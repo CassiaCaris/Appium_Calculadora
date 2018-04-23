@@ -1,6 +1,7 @@
-require 'rspec/expectations'
+
 require 'appium_lib'
 require 'pry'
+require 'rspec/expectations'
 
 if ENV['PLATFORM'] == 'ios'
   caps = Appium.load_appium_txt file: File.expand_path('./../../../ios_appium.txt', __FILE__), verbose: true
